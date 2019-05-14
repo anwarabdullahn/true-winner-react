@@ -7,9 +7,7 @@ export const getTopicRequest = () => ({
 	type: Types.GET_TOPIC_REQUEST
 });
 
-export const getTopicSuccess = ({ topics }) => ({
+export const getTopicSuccess = (topics) => ({
 	type: Types.GET_TOPIC_SUCCESS,
-	payload: {
-		topics
-	}
+	payload: { topics }
 });

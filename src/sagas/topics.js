@@ -1,10 +1,11 @@
-import { takeEvery, call, fork } from 'redux-saga/effects';
+import { takeEvery, call, fork, put } from 'redux-saga/effects';
 import * as actions from '../actions/topics';
 import * as api from '../api/topics';
 
 function* getTopics() {
 	try {
-		const result = call(api.getTopics);
+		const result = yield call(api.getTopics);
+		yield put(actions.getTopicSuccess(result));
 	} catch (e) {}
 }
 
