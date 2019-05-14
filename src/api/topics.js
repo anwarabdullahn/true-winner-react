@@ -5,8 +5,8 @@ export const initTopics = () =>
 		JSON.stringify([
 			{
 				id: 1,
-				title: 'What Your Programming Language',
-				options: [ { id: 1, name: 'Javascripts', count: 10 }, { id: 2, name: 'Dart', count: 2 } ],
+				title: 'Kapan bukber nich ?',
+				options: [ { id: 1, name: 'Minggu depan skhuyyy..', count: 10 }, { id: 2, name: 'Senin ini yokss takiss!!', count: 2 } ],
 				voter: 12
 			}
 		])

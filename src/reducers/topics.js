@@ -1,8 +1,6 @@
 import { Types } from '../actions/topics';
 
-const initialState = {
-	topics: []
-};
+const initialState = {};
 
 export default (state = initialState, actions) => {
 	switch (actions.type) {

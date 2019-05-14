@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getTopicRequest } from '../actions/topics';
+import './Main.scss';
+import Card from '../components/Card';
 
-import Button from 'antd/lib/button';
 class Main extends Component {
 	componentDidMount() {
 		this.props.getTopicRequest();
 	}
 
 	render() {
-		console.log('props', this.props);
+		console.log('this.props', this.props);
 		return (
-			<div>
-				<h1>Hello World</h1>
-
-				<Button type="primary">Button</Button>
+			<div className="main-content">
+				{this.props.topics.topics && <Card data={this.props.topics.topics[0]} />}
 			</div>
 		);
-	}
-
-	componentWillUnmount() {
-		console.log('unmount');
 	}
 }
 
