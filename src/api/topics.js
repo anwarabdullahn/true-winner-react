@@ -6,14 +6,7 @@ export const initTopics = () =>
 			{
 				id: 1,
 				title: 'What Your Programming Language',
-				options: [
-					{ id: 1, name: 'Javascripts', count: 10 },
-					{
-						id: 2,
-						name: 'Dart',
-						count: 2
-					}
-				],
+				options: [ { id: 1, name: 'Javascripts', count: 10 }, { id: 2, name: 'Dart', count: 2 } ],
 				voter: 12
 			}
 		])

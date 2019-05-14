@@ -6,7 +6,9 @@ function* getTopics() {
 	try {
 		const result = yield call(api.getTopics);
 		yield put(actions.getTopicSuccess(result));
-	} catch (e) {}
+	} catch (e) {
+		console.log('error get topic', e);
+	}
 }
 
 function* watchGetTopicsRequest() {
