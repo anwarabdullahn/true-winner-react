@@ -23,7 +23,6 @@ export default class index extends React.Component {
 	};
 
 	render() {
-		console.log('props', this.props);
 		return (
 			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				<form onSubmit={this.handleSubmit}>

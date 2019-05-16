@@ -14,7 +14,6 @@ class Main extends Component {
 	};
 
 	render() {
-		console.log('this.props', this.props);
 		return (
 			<div className="main-content">
 				{this.props.topics.topics && (

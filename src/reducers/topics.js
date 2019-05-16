@@ -5,7 +5,6 @@ const initialState = {
 };
 
 export default (state = initialState, actions) => {
-	console.log('action', actions);
 	switch (actions.type) {
 		case Types.GET_TOPIC_SUCCESS:
 			return {
