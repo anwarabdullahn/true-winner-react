@@ -25,6 +25,6 @@ export const voteTopic = ({ id }) =>
 			topic.options[index].count += 1;
 			topic.voter += 1;
 			sessionStorage.setItem('topics', JSON.stringify(topic));
-			return resolve();
-		}, 5000);
+			return resolve({ id });
+		}, 2300);
 	});

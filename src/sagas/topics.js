@@ -18,7 +18,8 @@ function* watchGetTopicsRequest() {
 function* voteTopic(action) {
 	try {
 		yield put(actions.voteTopicFetching());
-		yield call(api.voteTopic, { id: action.payload.id });
+		const getChose = yield call(api.voteTopic, { id: action.payload.id });
+		yield put(actions.voteTopicSucess(getChose));
 		yield call(getTopics);
 	} catch (e) {
 		console.log('error vote topic', e);

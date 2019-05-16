@@ -2,116 +2,122 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
 
 .card-content {
-    border: none !important;
-    // border-radius: 4px !important;
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important;
-    width: 400px !important;
-    background-color: #151f2a !important;
-    font-family: 'Montserrat',
-        sans-serif;
-    margin: 0px !important;
+	border: none !important;
+	// border-radius: 4px !important;
+	border-top-left-radius: 15px !important;
+	border-top-right-radius: 15px !important;
+	width: 400px !important;
+	background-color: #151f2a !important;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px !important;
 
-    .ant-card-head {
-        color: white !important;
-        text-align: center;
-        background-color: #263147 !important;
-    }
+	.ant-card-head {
+		color: white !important;
+		text-align: center;
+		background-color: #263147 !important;
+	}
 
-    .ant-card-body {
-        background-color: #f5f5f5;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        overflow: visible;
+	.ant-card-body {
+		background-color: #f5f5f5;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		overflow: visible;
 
-        .ant-btn:nth-child(1) {
-            border-radius: 20px !important;
-            align-self: center;
-        }
+		.ant-btn:nth-child(1) {
+			border-radius: 20px !important;
+			align-self: center;
+		}
 
-        h3 {
-            margin-top: 15px;
-            font-family: 'Baloo Bhai',
-                cursive;
-            align-self: center;
-            font-size: 24px;
-            margin-bottom: 0 !important;
-        }
+		h3 {
+			margin-top: 15px;
+			font-family: 'Baloo Bhai', cursive;
+			align-self: center;
+			font-size: 24px;
+			margin-bottom: 0 !important;
+		}
 
-        span:nth-child(3) {
-            align-self: center;
-            font-weight: 800 !important;
-            color: #a8a8a8 !important;
-        }
+		span:nth-child(3) {
+			align-self: center;
+			font-weight: 800 !important;
+			color: #a8a8a8 !important;
+		}
 
-        .announce {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px !important;
-            color: #a8a8a8 !important;
+		.announce {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px !important;
+			color: #a8a8a8 !important;
 
-            i {
-                border: 1px solid !important;
-                padding: 3px !important;
-                min-width: 10px !important;
-                min-height: 10px !important;
-                border-radius: 15px !important;
-            }
-        }
+			i {
+				border: 1px solid !important;
+				padding: 3px !important;
+				min-width: 10px !important;
+				min-height: 10px !important;
+				border-radius: 15px !important;
+			}
+		}
 
-        .poll {
-            display: flex;
-            font-weight: bold;
-            flex-wrap: wrap;
+		.poll {
+			display: flex;
+			font-weight: bold;
+			flex-wrap: wrap;
             font-size: 16px;
+            margin-bottom: 20px;
 
-            .ant-radio-checked .ant-radio-inner {
-                border-color: #F96555 !important;
-            }
+			.ant-radio-checked .ant-radio-inner {
+				border-color: #f96555 !important;
+			}
 
-            .ant-radio-wrapper:hover .ant-radio,
-            .ant-radio:hover .ant-radio-inner,
-            .ant-radio-input:focus+.ant-radio-inner {
-                border-color: #F96555 !important;
-            }
+			.ant-radio-wrapper:hover .ant-radio,
+			.ant-radio:hover .ant-radio-inner,
+			.ant-radio-input:focus + .ant-radio-inner {
+				border-color: #f96555 !important;
+			}
 
-            .ant-radio-inner::after {
-                background-color: #F96555 !important;
-            }
+			.ant-radio-inner::after {
+				background-color: #f96555 !important;
+			}
 
-            label.ant-radio-wrapper {
-                span:nth-child(2) {
-                    color: #000 !important
-                }
-                &.ant-radio-wrapper-checked {
-                    span:nth-child(2) {
-                        color: #F96555 !important
-                    }
-                }
-            }
+			label.ant-radio-wrapper {
+				span:nth-child(2) {
+					color: #000 !important;
+				}
+				&.ant-radio-wrapper-checked {
+					span:nth-child(2) {
+						color: #f96555 !important;
+					}
+				}
+			}
 
-            p {
-                margin-left: auto !important;
-                margin-bottom: 5px !important;
-            }
+			p {
+				margin-left: auto !important;
+				margin-bottom: 5px !important;
+			}
 
-            .persentage {
-                margin-bottom: 40px;
-                min-height: 10px;
+			.persentage {
+				max-height: 10px;
+				background-color: #a8a8a8;
                 width: 100%;
-                background-color: #a8a8a8;
-            }
-        }
-    }
+
+                &-bar{
+                    background-color: #5a5a5a;
+                }
+
+                .bar-chose {
+                    background-color: #f96555;
+                }
+			}
+		}
+	}
 }
 
 .submit-btn {
-    background-color: #2BB900 !important;
-    align-self: flex-end !important;
-    border: none !important;
-    font-size: 20px !important;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
-    margin: 0 !important;
+	background-color: #2bb900 !important;
+	align-self: flex-end !important;
+	border: none !important;
+	font-size: 20px !important;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+	margin: 0 !important;
 }

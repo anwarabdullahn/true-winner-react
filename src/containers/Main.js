@@ -22,6 +22,7 @@ class Main extends Component {
 						data={this.props.topics.topics}
 						onSubmit={this.handleSubmit}
 						isVote={this.props.topics.isVote}
+						isChose={this.props.topics.isChose}
 					/>
 				)}
 			</div>

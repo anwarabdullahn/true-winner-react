@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Button, Icon, Radio } from 'antd';
+import classnames from 'classnames';
 import './_index.scss';
 const RadioGroup = Radio.Group;
 
@@ -35,7 +36,7 @@ export default class index extends React.Component {
 							</p>
 							<p>{this.props.data.voter} participans</p>
 						</div>
-						<RadioGroup name="options" onChange={this.onChange} style={{ marginTop: '10px' }}>
+						<RadioGroup name="options" onChange={this.onChange}>
 							{this.props.data.options &&
 								this.props.data.options.map((opt) => (
 									<div className="poll" key={opt.id}>
@@ -43,12 +44,28 @@ export default class index extends React.Component {
 											{opt.name}
 										</Radio>
 										<p>{opt.count}</p>
-										<div className="persentage" />
+										<div className="persentage">
+											<div
+												className={classnames(this.props.isChose === opt.id ? 'bar-chose' : 'persentage-bar' )}
+												style={{
+													width: `${opt.count / this.props.data.voter * 100}%`,
+													transition: 'width 1000ms ease-in-out',
+													minHeight: '10px'
+												}}
+											/>
+										</div>
 									</div>
 								))}
 						</RadioGroup>
 					</Card>
-					<Button className="submit-btn" type="primary" htmlType="submit" block loading={this.props.isVote}>
+					<Button
+						className="submit-btn"
+						type="primary"
+						htmlType="submit"
+						block
+						loading={this.props.isVote}
+						disabled={this.state.options === 0}
+					>
 						Vote
 					</Button>
 				</form>

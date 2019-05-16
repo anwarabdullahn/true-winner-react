@@ -18,6 +18,11 @@ export default (state = initialState, actions) => {
 				...state,
 				isVote: actions.payload.isVote
 			};
+		case Types.VOTE_TOPIC_SUCCESS:
+			return {
+				...state,
+				isChose: actions.payload.isChose
+			};
 		default:
 			return state;
 	}
