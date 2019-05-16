@@ -13,7 +13,7 @@ class Main extends Component {
 		console.log('this.props', this.props);
 		return (
 			<div className="main-content">
-				{this.props.topics.topics && <Card data={this.props.topics.topics[0]} />}
+				{this.props.topics.topics && <Card data={this.props.topics.topics} />}
 			</div>
 		);
 	}
