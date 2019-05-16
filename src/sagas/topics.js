@@ -1,4 +1,4 @@
-import { takeEvery, call, fork, put } from 'redux-saga/effects';
+import { takeEvery, call, fork, put, takeLatest } from 'redux-saga/effects';
 import * as actions from '../actions/topics';
 import * as api from '../api/topics';
 
@@ -15,6 +15,19 @@ function* watchGetTopicsRequest() {
 	yield takeEvery(actions.Types.GET_TOPIC_REQUEST, getTopics);
 }
 
-const topicsSaga = [ fork(watchGetTopicsRequest) ];
+function* voteTopic(action) {
+	try {
+		yield call(api.voteTopic, { id: action.payload.id });
+		yield call(getTopics);
+	} catch (e) {
+		console.log('error vote topic', e);
+	}
+}
+
+function* watchVoteTopicRequest() {
+	yield takeLatest(actions.Types.VOTE_TOPIC_REQUEST, voteTopic);
+}
+
+const topicsSaga = [ fork(watchGetTopicsRequest), fork(watchVoteTopicRequest) ];
 
 export default topicsSaga;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getTopicRequest } from '../actions/topics';
+import { getTopicRequest, voteTopicRequest } from '../actions/topics';
 import './Main.scss';
 import Card from '../components/Card';
 
@@ -9,11 +9,21 @@ class Main extends Component {
 		this.props.getTopicRequest();
 	}
 
+	handleSubmit = (id) => {
+		this.props.voteTopicRequest(id);
+	};
+
 	render() {
 		console.log('this.props', this.props);
 		return (
 			<div className="main-content">
-				{this.props.topics.topics && <Card data={this.props.topics.topics} />}
+				{this.props.topics.topics && (
+					<Card
+						data={this.props.topics.topics}
+						onSubmit={this.handleSubmit}
+						isVote={this.props.topics.isVote}
+					/>
+				)}
 			</div>
 		);
 	}
@@ -24,5 +34,6 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, {
-	getTopicRequest
+	getTopicRequest,
+	voteTopicRequest
 })(Main);
