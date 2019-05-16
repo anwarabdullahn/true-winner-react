@@ -16,17 +16,15 @@ export const initTopics = () =>
 export const getTopics = () =>
 	sessionStorage.getItem('topics') === null ? [] : JSON.parse(sessionStorage.getItem('topics'));
 
-export const voteTopic = ({ id }) => {
-	const topic = JSON.parse(sessionStorage.getItem('topics')),
-		index = topic.options.findIndex((opt) => id === opt.id);
-	topic.options[index].count += 1;
-	topic.voter += 1;
-	sessionStorage.setItem('topics', JSON.stringify(topic));
-	setTimeout(
-		() => ({
-			msg: 'success vote',
-			success: true
-		}),
-		700
-	);
-};
+export const voteTopic = ({ id }) =>
+	new Promise(function(resolve, reject) {
+		setTimeout(function() {
+			const topic = JSON.parse(sessionStorage.getItem('topics')),
+				index = topic.options.findIndex((opt) => id === opt.id);
+			index === -1 && reject();
+			topic.options[index].count += 1;
+			topic.voter += 1;
+			sessionStorage.setItem('topics', JSON.stringify(topic));
+			return resolve();
+		}, 5000);
+	});

@@ -5,6 +5,7 @@ const initialState = {
 };
 
 export default (state = initialState, actions) => {
+	console.log('action', actions);
 	switch (actions.type) {
 		case Types.GET_TOPIC_SUCCESS:
 			return {
@@ -12,10 +13,10 @@ export default (state = initialState, actions) => {
 				topics: actions.payload.topics,
 				isVote: false
 			};
-		case Types.VOTE_TOPIC_REQUEST:
+		case Types.VOTE_TOPIC_FETCHING:
 			return {
 				...state,
-				isVote: true
+				isVote: actions.payload.isVote
 			};
 		default:
 			return state;

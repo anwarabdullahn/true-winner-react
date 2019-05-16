@@ -35,25 +35,20 @@ export default class index extends React.Component {
 							</p>
 							<p>{this.props.data.voter} participans</p>
 						</div>
-						<RadioGroup
-							name="options"
-							onChange={this.onChange}
-							style={{ marginTop: '10px' }}
-						>
+						<RadioGroup name="options" onChange={this.onChange} style={{ marginTop: '10px' }}>
 							{this.props.data.options &&
 								this.props.data.options.map((opt) => (
 									<div className="poll" key={opt.id}>
-										<Radio value={opt.id} />
-										<h4>{opt.name}</h4>
+										<Radio value={opt.id} disabled={this.props.isVote}>
+											{opt.name}
+										</Radio>
 										<p>{opt.count}</p>
 										<div className="persentage" />
 									</div>
 								))}
 						</RadioGroup>
 					</Card>
-					<Button className="submit-btn" type="primary" htmlType="submit" block
-					loading={this.props.isVote}
-					>
+					<Button className="submit-btn" type="primary" htmlType="submit" block loading={this.props.isVote}>
 						Vote
 					</Button>
 				</form>

@@ -3,6 +3,7 @@ export const Types = {
 	GET_TOPIC_SUCCESS: 'GET_TOPIC_SUCCESS',
 	VOTE_TOPIC_REQUEST: 'VOTE_TOPIC_REQUEST',
 	VOTE_TOPIC_SUCCESS: 'VOTE_TOPIC_SUCCESS',
+	VOTE_TOPIC_FETCHING: 'VOTE_TOPIC_FETCHING'
 };
 
 export const getTopicRequest = () => ({
@@ -19,3 +20,9 @@ export const voteTopicRequest = (id) => ({
 	payload: { id }
 });
 
+export const voteTopicFetching = () => ({
+	type: Types.VOTE_TOPIC_FETCHING,
+	payload: {
+		isVote: true
+	}
+});

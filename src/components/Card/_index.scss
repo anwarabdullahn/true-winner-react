@@ -80,6 +80,17 @@
                 background-color: #F96555 !important;
             }
 
+            label.ant-radio-wrapper {
+                span:nth-child(2) {
+                    color: #000 !important
+                }
+                &.ant-radio-wrapper-checked {
+                    span:nth-child(2) {
+                        color: #F96555 !important
+                    }
+                }
+            }
+
             p {
                 margin-left: auto !important;
                 margin-bottom: 5px !important;

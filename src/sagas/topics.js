@@ -17,6 +17,7 @@ function* watchGetTopicsRequest() {
 
 function* voteTopic(action) {
 	try {
+		yield put(actions.voteTopicFetching());
 		yield call(api.voteTopic, { id: action.payload.id });
 		yield call(getTopics);
 	} catch (e) {
