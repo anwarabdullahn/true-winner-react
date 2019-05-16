@@ -4,7 +4,7 @@
   "private": true,
   "repository": "https://github.com/anwarabdullahn/true-winner-react.git",
   "author": "Anwar Abdullahn <aanwaran@gmail.com>",
-  "homepage": "https://anwarabdullahn.github.io/run-true-winner",
+  "homepage": "https://anwarabdullahn.github.io/try-true-winner",
   "dependencies": {
     "antd": "^3.18.1",
     "classnames": "^2.2.6",
