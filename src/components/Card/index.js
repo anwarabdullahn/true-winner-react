@@ -28,7 +28,7 @@ export default class index extends React.Component {
 			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				<form onSubmit={this.handleSubmit}>
 					<Card title="Vote" className="card-content">
-						<Button type="danger" ghost onClick={this.onDisable}>
+						<Button type={!this.state.disable ? 'danger' : 'primary'} ghost onClick={this.onDisable}>
 							{!this.state.disable ? 'Open' : 'Closed'}
 						</Button>
 						<h3>{this.props.data.title}</h3>
@@ -72,7 +72,7 @@ export default class index extends React.Component {
 						loading={this.props.isVote}
 						disabled={this.state.options === 0 || this.state.disable}
 					>
-						Vote
+						{this.props.isChose === undefined ? 'Vote' : 'Vote again'}
 					</Button>
 				</form>
 			</div>

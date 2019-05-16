@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 .card-content {
 	border: none !important;
@@ -32,8 +33,8 @@
 		h3 {
 			margin-top: 15px;
 			font-family: 'Baloo Bhai', cursive;
-			align-self: center;
 			font-size: 24px;
+			align-self: center;
 			margin-bottom: 0 !important;
 		}
 
@@ -62,8 +63,8 @@
 			display: flex;
 			font-weight: bold;
 			flex-wrap: wrap;
-            font-size: 16px;
-            margin-bottom: 20px;
+			font-size: 16px;
+			margin-bottom: 20px;
 
 			.ant-radio-checked .ant-radio-inner {
 				border-color: #f96555 !important;
@@ -82,10 +83,14 @@
 			label.ant-radio-wrapper {
 				span:nth-child(2) {
 					color: #000 !important;
+					font-family: 'Ubuntu', sans-serif;
+					font-size: 16px;
 				}
 				&.ant-radio-wrapper-checked {
 					span:nth-child(2) {
 						color: #f96555 !important;
+						font-family: 'Ubuntu', sans-serif;
+						font-size: 16px;
 					}
 				}
 			}
@@ -93,20 +98,22 @@
 			p {
 				margin-left: auto !important;
 				margin-bottom: 5px !important;
+				font-family: 'Ubuntu', sans-serif;
+				color: #a8a8a8;
 			}
 
 			.persentage {
 				max-height: 10px;
 				background-color: #a8a8a8;
-                width: 100%;
+				width: 100%;
 
-                &-bar{
-                    background-color: #5a5a5a;
-                }
+				&-bar {
+					background-color: #5a5a5a;
+				}
 
-                .bar-chose {
-                    background-color: #f96555;
-                }
+				.bar-chose {
+					background-color: #f96555;
+				}
 			}
 		}
 	}
