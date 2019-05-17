@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/try-true-winner/static/css/main.76af46b9.chunk.css",
+    "main.js": "/try-true-winner/static/js/main.707a8f23.chunk.js",
+    "main.js.map": "/try-true-winner/static/js/main.707a8f23.chunk.js.map",
+    "runtime~main.js": "/try-true-winner/static/js/runtime~main.a5aed8d3.js",
+    "runtime~main.js.map": "/try-true-winner/static/js/runtime~main.a5aed8d3.js.map",
+    "static/css/2.1ad4406c.chunk.css": "/try-true-winner/static/css/2.1ad4406c.chunk.css",
+    "static/js/2.ee0a941e.chunk.js": "/try-true-winner/static/js/2.ee0a941e.chunk.js",
+    "static/js/2.ee0a941e.chunk.js.map": "/try-true-winner/static/js/2.ee0a941e.chunk.js.map",
+    "index.html": "/try-true-winner/index.html",
+    "precache-manifest.95980b0d24938cac7a5576ea6f0a20c7.js": "/try-true-winner/precache-manifest.95980b0d24938cac7a5576ea6f0a20c7.js",
+    "service-worker.js": "/try-true-winner/service-worker.js",
+    "static/css/2.1ad4406c.chunk.css.map": "/try-true-winner/static/css/2.1ad4406c.chunk.css.map",
+    "static/css/main.76af46b9.chunk.css.map": "/try-true-winner/static/css/main.76af46b9.chunk.css.map"
+  }
+}
