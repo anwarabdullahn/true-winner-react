@@ -8,12 +8,11 @@
 ## Simple LINE Poll Clone  ✨
 You cant do online test for this repo [Here](https://true-winner.herokuapp.com/).
 
-![preview](assets/preview.png)
+![preview](assets/compare.png)
 
 </div>
 
 ### Installation
-
 This Repo requires [Node.js](https://nodejs.org/) to run.
 
 Install the dependencies and devDependencies and start the server.
@@ -26,7 +25,6 @@ $ npm run start || yarn start
 ```
 
 ### Tech
-
 This repo uses a number of open source projects to work properly:
 * [antd](https://ant.design/)
 * [classnames](https://www.npmjs.com/package/classnames/)
@@ -35,10 +33,9 @@ This repo uses a number of open source projects to work properly:
 * [Node Sass](https://npmjs.org/package/node-sass/)
 
 ### How to Use
- - Click on the card 'add new topic' for add new topic
- - Click thumbs up green icon for up vote the topic
- - Click thumbs down red icon for down vote the topic
+ - Choose Options
+ - Click Vote Button
 
-License
+### License
 ----
 MIT
