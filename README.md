@@ -8,6 +8,13 @@
 ## Simple LINE Poll Clone  ✨
 You cant do online test for this repo [Here](https://true-winner.herokuapp.com/).
 
+<div align="left">
+
+### About
+True Winner is Simple Polling Apps inspired by LINE Poll. User able to do duplicate vote. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This Project alse have implement Redux-Saga for state management.
+
+</div>
+
 ![preview](assets/compare.png)
 
 </div>
@@ -20,8 +27,8 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 $ git clone "this-repo"
 $ cd "this-repo"
-$ npm install || yarn install
-$ npm run start || yarn start
+$ npm install 'or' yarn install
+$ npm run start 'or' yarn start
 ```
 
 ### Tech
