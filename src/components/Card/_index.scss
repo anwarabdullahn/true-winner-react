@@ -23,6 +23,7 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+		height: 450px !important;
 		overflow: visible;
 
 		.ant-btn:nth-child(1) {
@@ -72,7 +73,7 @@
 
 			.ant-radio-wrapper:hover .ant-radio,
 			.ant-radio:hover .ant-radio-inner,
-			.ant-radio-input:focus + .ant-radio-inner {
+			.ant-radio-input:focus+.ant-radio-inner {
 				border-color: #f96555 !important;
 			}
 
@@ -86,6 +87,7 @@
 					font-family: 'Ubuntu', sans-serif;
 					font-size: 16px;
 				}
+
 				&.ant-radio-wrapper-checked {
 					span:nth-child(2) {
 						color: #f96555 !important;
