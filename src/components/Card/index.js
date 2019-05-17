@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Icon, Radio } from 'antd';
+import { Card, Button, Icon, Radio, Tooltip } from 'antd';
 import classnames from 'classnames';
 import './_index.scss';
 const RadioGroup = Radio.Group;
@@ -26,7 +26,15 @@ export default class index extends React.Component {
 		return (
 			<div style={{ display: 'flex', flexDirection: 'column' }}>
 				<form onSubmit={this.handleSubmit}>
-					<Card title="Vote" className="card-content">
+					<Card
+						title="Vote"
+						className="card-content"
+						actions={[
+							<Tooltip placement="topRight" title="Create Own Poll">
+								<Icon type="edit" />
+							</Tooltip>
+						]}
+					>
 						<Button type={!this.state.disable ? 'danger' : 'primary'} ghost onClick={this.onDisable}>
 							{!this.state.disable ? 'Open' : 'Closed'}
 						</Button>
