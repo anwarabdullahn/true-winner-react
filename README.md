@@ -6,12 +6,13 @@
 ![last commit](https://badgen.net/github/last-commit/anwarabdullahn/true-winner-react)
 
 ## Simple LINE Poll Clone  ✨
-You cant do online test for this repo [Here](https://true-winner.herokuapp.com/).
 
 <div align="left">
 
 ### About
-True Winner is Simple Polling Apps inspired by LINE Poll. User able to do duplicate vote. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This Project alse have implement Redux-Saga for state management.
+True Winner is Simple Polling Apps inspired by [LINE](https://line.me/en/) Poll. User able to do duplicate vote. Using Session Storage to store the data. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This Project also have implement [Redux-Saga](https://github.com/redux-saga/redux-saga) for state management.
+
+You cant do online test for this repo [Here](https://true-winner.herokuapp.com/). ✨
 
 </div>
 
