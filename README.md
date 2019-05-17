@@ -5,10 +5,11 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/react) ![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103) ![stars](https://badgen.net/github/stars/anwarabdullahn/true-winner-react) ![forks](https://badgen.net/github/forks/anwarabdullahn/true-winner-react)
 ![last commit](https://badgen.net/github/last-commit/anwarabdullahn/true-winner-react)
 
-![preview](assets/preview.png)
-
 ## Simple LINE Poll Clone  ✨
 You cant do online test for this repo [Here](https://true-winner.herokuapp.com/).
+
+![preview](assets/preview.png)
+
 </div>
 
 ### Installation
