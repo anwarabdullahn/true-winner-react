@@ -13,6 +13,7 @@
 True Winner is Simple Polling Apps inspired by [LINE](https://line.me/en/) Poll. User able to do duplicate vote. Using Session Storage to store the data. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This Project also have implement [Redux-Saga](https://github.com/redux-saga/redux-saga) for state management.
 
 You cant do online test for this repo [Here](https://true-winner.herokuapp.com/). ✨
+``` please refresh if you find an aplication error ```
 
 </div>
 
